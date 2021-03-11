@@ -26,7 +26,8 @@
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
+                    aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
@@ -34,8 +35,14 @@
     <div class="container my-3">
         <h1>Welcome To Magic Notes</h1>
         <div class="card" style="width: 18rem;">
-
             <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1"><b>Add title</b></label>
+                    <input type="email" class="title" id="addTitle" aria-describedby="emailHelp"
+                        placeholder="Enter title">
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small> -->
+                </div>
                 <h5 class="card-title">Add a note</h5>
                 <div class="form-group">
                     <textarea class="form-control" id="addTxt" rows="3"></textarea>
@@ -46,7 +53,7 @@
         <h1 class="my-5">Your Notes</h1>
         <hr>
         <div id="notes" class="row container-fluid">
-          
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
